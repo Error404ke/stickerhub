@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StickerHub - Premium Custom Stickers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🟢</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-sticky-note"></i>
+                <span>StickerHub</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#custom">Custom</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="cta-nav">Order Now</a>
+            </div>
+            <button class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Stick With <span class="highlight">Quality</span></h1>
+                <p class="subtitle">Premium custom stickers that tell your story. Waterproof, durable, and vibrant designs that last.</p>
+                <div class="hero-btns">
+                    <a href="#products" class="btn primary-btn">Browse Collection</a>
+                    <a href="#custom" class="btn secondary-btn">Create Custom</a>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="dead.jpeg"alt= "photo"height="300px" width="300px">
+                <img src="hertz.jpeg"alt= "photo"height="300px" width="300px">
+                <img src="ghost.jpeg"alt= "photo"height="300px" width="300px">
+                <img src="cam.jpeg"alt= "photo"height="300px" width="300px">
+            </div>           
+         </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Section -->
+    <section class="whatsapp-section" id="whatsapp">
+        <div class="container">
+            <div class="whatsapp-card">
+                <div class="whatsapp-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h2>Speak to the Seller</h2>
+                <p>Have questions? Need custom designs? Chat directly with us on WhatsApp for instant assistance!</p>
+                <div class="whatsapp-features">
+                    <div class="feature">
+                        <i class="fas fa-clock"></i>
+                        <span>Quick Replies</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-image"></i>
+                        <span>Send Design Ideas</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Track Orders</span>
+                    </div>
+                </div>
+                <a href="https://wa.me/254712345678?text=Hello!%20I'm%20interested%20in%20your%20stickers" 
+                   class="whatsapp-btn" target="_blank" id="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i>
+                    Chat on WhatsApp Now
+                </a>
+                <p class="whatsapp-note"><i class="fas fa-info-circle"></i> We respond within 15 minutes</p>
+                
+                <!-- WhatsApp Message Preview -->
+                <div class="whatsapp-preview">
+                    <div class="preview-header">
+                        <div class="preview-contact">
+                            <div class="preview-avatar">SH</div>
+                            <div>
+                                <h4>StickerHub Seller</h4>
+                                <p>Typically replies within 15 min</p>
+                            </div>
+                        </div>
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="preview-messages">
+                        <div class="message received">
+                            <p>Hello! 👋 Welcome to StickerHub! How can I help you today?</p>
+                            <span class="time">10:00 AM</span>
+                        </div>
+                        <div class="message sent">
+                            <p>Hi! I'd like to order custom stickers</p>
+                            <span class="time">10:01 AM</span>
+                        </div>
+                    </div>
+                    <div class="preview-input">
+                        <input type="text" placeholder="Type your message here..." id="preview-input">
+                        <button onclick="sendPreviewMessage()">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Our Sticker Collection</h2>
+            <p class="section-subtitle">Choose from our popular designs or create your own</p>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image" style="background-color: #ffeaa7;">
+                        <span>🌈</span>
+                    </div>
+                    <h3>Glossy Vinyl</h3>
+                    <p>Waterproof & weather resistant</p>
+                    <div class="price">From KES 200</div>
+                    <button class="product-btn" onclick="orderProduct('Glossy Vinyl Stickers')">
+                        <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                    </button>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image" style="background-color: #a29bfe;">
+                        <span>✨</span>
+                    </div>
+                    <h3>Matte Finish</h3>
+                    <p>Elegant non-reflective surface</p>
+                    <div class="price">From KES 250</div>
+                    <button class="product-btn" onclick="orderProduct('Matte Finish Stickers')">
+                        <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                    </button>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image" style="background-color: #fd79a8;">
+                        <span>🦄</span>
+                    </div>
+                    <h3>Holographic</h3>
+                    <p>Shimmering rainbow effect</p>
+                    <div class="price">From KES 350</div>
+                    <button class="product-btn" onclick="orderProduct('Holographic Stickers')">
+                        <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                    </button>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image" style="background-color: #55efc4;">
+                        <span>🔄</span>
+                    </div>
+                    <h3>Kiss-Cut</h3>
+                    <p>Easy peel individual stickers</p>
+                    <div class="price">From KES 180</div>
+                    <button class="product-btn" onclick="orderProduct('Kiss-Cut Stickers')">
+                        <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Stickers -->
+    <section class="custom" id="custom">
+        <div class="container">
+            <h2 class="section-title">Create Custom Stickers</h2>
+            <div class="custom-process">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Send Your Design</h3>
+                    <p>WhatsApp us your logo or design</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Get a Quote</h3>
+                    <p>We'll send pricing within minutes</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Approval & Production</h3>
+                    <p>We create & ship in 2-3 days</p>
+                </div>
+            </div>
+            
+            <div class="custom-form">
+                <h3>Quick Quote Calculator</h3>
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="range" id="quantity" min="50" max="1000" value="100">
+                    <span id="quantity-value">100 stickers</span>
+                </div>
+                <div class="form-group">
+                    <label for="size">Size:</label>
+                    <select id="size">
+                        <option value="2x2">2" x 2" (KES 40 each)</option>
+                        <option value="3x3">3" x 3" (KES 45 each)</option>
+                        <option value="4x4">4" x 4" (KES 50 each)</option>
+                    </select>
+                </div>
+                <div class="price-display">
+                    <h4>Estimated Price: <span id="estimated-price">KES 1,500</span></h4>
+                    <a href="https://wa.me/254712345678?text=Hello!%20I'd%20like%20a%20custom%20sticker%20quote%20for%20100%20stickers%20(2x2)"
+                       class="btn primary-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Get Exact Quote on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/254712345678?text=Hello!%20I'm%20interested%20in%20your%20stickers" 
+       class="floating-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="pulse"></span>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-sticky-note"></i> StickerHub</h3>
+                    <p>Creating sticky memories since 2023</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +254 799178004</p>
+                    <p><i class="fas fa-envelope"></i> info@stickerhub.co.ke</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Business Hours</h4>
+                    <p>Mon-Fri: 8AM - 6PM</p>
+                    <p>Sat: 9AM - 4PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 StickerHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
