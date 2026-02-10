@@ -122,7 +122,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 behavior: 'smooth'
             });
             
-            // Close mobile menu if open
+            
             if (window.innerWidth <= 768) {
                 navLinks.style.display = 'none';
             }
@@ -130,7 +130,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Animate elements on scroll
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -145,7 +145,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe elements to animate
+
 document.querySelectorAll('.product-card, .process-step, .whatsapp-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
@@ -153,7 +153,7 @@ document.querySelectorAll('.product-card, .process-step, .whatsapp-card').forEac
     observer.observe(el);
 });
 
-// Sticker animation on hover
+
 document.querySelectorAll('.sticker').forEach(sticker => {
     sticker.addEventListener('mouseenter', () => {
         sticker.style.transform = 'scale(1.2) rotate(10deg)';
@@ -164,12 +164,12 @@ document.querySelectorAll('.sticker').forEach(sticker => {
     });
 });
 
-// Initialize with current time in preview
+
 document.querySelectorAll('.message .time').forEach(timeElement => {
     timeElement.textContent = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
 });
 
-// WhatsApp online status
+
 function updateOnlineStatus() {
     const now = new Date();
     const hours = now.getHours();
@@ -188,7 +188,7 @@ function updateOnlineStatus() {
 updateOnlineStatus();
 setInterval(updateOnlineStatus, 60000); // Update every minute
 
-// Add sticker animation on page load
+
 window.addEventListener('load', () => {
     document.querySelectorAll('.sticker').forEach((sticker, index) => {
         sticker.style.animationDelay = `${index * 0.5}s`;
