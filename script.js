@@ -8,7 +8,7 @@ if (menuBtn) {
     });
 }
 
-const phoneNumber = '254799178004'; // Change this to your WhatsApp number
+const phoneNumber = '254799178004'; 
 const whatsappLink = document.getElementById('whatsapp-link');
 
 if (whatsappLink) {
