@@ -8,7 +8,7 @@ if (menuBtn) {
     });
 }
 
-// Update phone number - REPLACE WITH YOUR ACTUAL NUMBER
+// Update phone number 
 const phoneNumber = '254799178004'; // Change this to your WhatsApp number
 const whatsappLink = document.getElementById('whatsapp-link');
 
