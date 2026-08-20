@@ -53,9 +53,7 @@ if (quantitySlider && sizeSelect) {
     quantitySlider.addEventListener('input', updateQuote);
     sizeSelect.addEventListener('change', updateQuote);
     updateQuote(); // Initial calculation
-}
 
-// Order Product via WhatsApp
 function orderProduct(productName) {
     const message = `Hello! I'd like to order ${productName}. Can you provide more details?`;
     const encodedMessage = encodeURIComponent(message);
