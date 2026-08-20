@@ -68,7 +68,7 @@ function sendPreviewMessage() {
     if (message) {
         const messagesContainer = document.querySelector('.preview-messages');
         
-        // Create new message
+        
         const newMessage = document.createElement('div');
         newMessage.className = 'message sent';
         newMessage.innerHTML = `
